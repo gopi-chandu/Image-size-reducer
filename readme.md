@@ -11,7 +11,7 @@ Usage
 > download the release exe and install it , then run it.  
 
 ## For Developers / Contributors
-> - git clone \n 
-    - install dependencies using `npm i;`
-    - run the app using `npm run dev;`
+> - git clone
+> - install dependencies using `npm i;`
+> - run the app using `npm run dev;`
 
