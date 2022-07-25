@@ -2,24 +2,24 @@
   "name": "image-size-reducer",
   "productName": "ImageSizeReducer",
   "version": "1.0.0",
-  "description": "to reduce image size / optimise image",
+  "description": "to reduce image size / optimize image",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "electron-forge start",
     "dev": "nodemon --exec electron .",
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . --overwrite  --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=false --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ImageSizeReducer\"",
-    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=false --out=release-builds"
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=false --out=release-builds",
+    "package-win": "electron-packager . --overwrite  --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ImageSizeReducer\"",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
   },
   "author": "Gopi Chandu",
   "license": "MIT",
   "devDependencies": {
     "electron": "19.0.8",
-    "electron-packager": "^15.5.1",
     "nodemon": "^2.0.19"
   },
   "dependencies": {
     "electron-log": "^4.4.8",
+    "electron-packager": "^15.5.1",
     "imagemin": "7.0.1",
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-pngquant": "8.0.0",
