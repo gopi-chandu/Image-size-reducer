@@ -1,0 +1,55 @@
+.container {
+	width: 400px;
+	margin-top: 70px;
+	padding: 0 20px;
+}
+
+.about {
+	width: 100%;
+}
+
+.btn {
+	width: 100%;
+}
+
+.output {
+	margin-top: 40px;
+}
+
+#output-path {
+	font-weight: bold;
+}
+
+h1{
+	background-color: aqua;
+}
+body{
+	text-align: center;
+}
+
+.box{
+	padding-left: 20px;
+}
+.item{
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.b{
+	border: black 2px solid;
+}
+
+h3 {
+	font-size: 37px;
+	background: -webkit-linear-gradient(rgb(0, 185, 242), rgb(255, 20, 200));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	height: 90px;
+  }
+
+  .co{
+	background: -webkit-linear-gradient(rgb(0, 185, 242), rgb(255, 20, 200));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	height: 70px;
+  }

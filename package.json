@@ -4,11 +4,21 @@
   "description": "to reduce image size / optimise image",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "nodemon --exec electron ."
   },
   "author": "Gopi Chandu",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^19.0.9"
+    "electron": "19.0.8",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "imagemin": "7.0.1",
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-pngquant": "8.0.0",
+    "slash": "3.0.0"
   }
+
 }
+
