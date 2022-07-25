@@ -14,10 +14,11 @@ const imagemin = require("imagemin");
 const imageminMozjpeg = require("imagemin-mozjpeg");
 const slash = require("slash");
 const { default: imageminPngquant } = require("imagemin-pngquant");
+const log = require("electron-log");
 console.log("Hello world");
 
 // set environment
-process.env.NODE_ENV = "development";
+process.env.NODE_ENV = "production";
 
 const isDev = process.env.NODE_ENV != "production" ? true : false;
 const isWindows = process.platform == "win32" ? true : false;
@@ -32,8 +33,8 @@ function createMainWindow() {
   mainWindow = new BrowserWindow({
     title: "Image Size Reducer",
     center: true,
-    width: isDev ? 700 : 500,
-    height: 600,
+    width: isDev ? 700 : 430,
+    height: 650,
     icon: "./assets/icons/icon256.png",
     resizable: isDev ? true : false,
     webPreferences: {
@@ -151,11 +152,12 @@ async function shrinkImage({ imgPath, quality, dest }) {
     });
 
     console.log(files);
-
+    log.info(files)
     shell.openPath(dest);
-    mainWindow.webContents.send('image-done')
+    mainWindow.webContents.send("image-done");
   } catch (err) {
     console.log(err);
+    log.error(err)
   }
 }
 
